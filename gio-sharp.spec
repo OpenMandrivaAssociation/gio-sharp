@@ -9,6 +9,7 @@ Source:         %{name}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch: noarch
 BuildRequires:  glib2-devel >= 2.22
+BuildRequires:  glib-sharp2
 BuildRequires:  gtk-sharp2-devel
 BuildRequires:  mono-devel
 BuildRequires:  monodoc-core
