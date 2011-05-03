@@ -1,6 +1,6 @@
 Name:           gio-sharp
 Version:        2.22
-Release:        %mkrel 0.1
+Release:        %mkrel 0.2
 License:        GPLv2 and MIT
 Group:          Development/Other
 Summary:        .NET/C# Bindings for GIO
