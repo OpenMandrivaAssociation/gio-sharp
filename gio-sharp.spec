@@ -1,5 +1,5 @@
 Name:           gio-sharp
-Version:        2.22
+Version:        2.22.3
 Release:        %mkrel 0.3
 License:        GPLv2 and MIT
 Group:          Development/Other
@@ -34,7 +34,7 @@ Files for developing programs that use gio-sharp
 
 %build
 %configure2_5x --libdir=%_prefix/lib
-%make
+make
 
 %install
 %makeinstall_std pkgconfigdir=%_datadir/pkgconfig
@@ -44,14 +44,10 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS
-#ChangeLog NEWS README
-%dir %_prefix/lib/mono/gac/gio-sharp
-%dir %_prefix/lib/mono/gac/gio-sharp/2.14.0.0__35e10195dab3c99f/
-%_prefix/lib/mono/gac/gio-sharp/*/*.dll*
-
-%dir %_prefix/lib/mono/gio-sharp-2.0
-%_prefix/lib/mono/gio-sharp-2.0/gio-sharp.dll
+%doc AUTHORS NEWS README
+#ChangeLog 
+%dir %_prefix/lib/gio-sharp
+%_prefix/lib/gio-sharp/gio-sharp.dll*
 
 %files devel
 %defattr(-,root,root)
