@@ -1,11 +1,11 @@
 Name:           gio-sharp
 Version:        2.22
-Release:        %mkrel 0.2
+Release:        %mkrel 0.3
 License:        GPLv2 and MIT
 Group:          Development/Other
 Summary:        .NET/C# Bindings for GIO
-Url:            http://gitorious.org/gio-sharp
-Source:         %{name}-%{version}.tar.bz2
+Url:            https://github.com/mono/gio-sharp
+Source:         https://github.com/downloads/mono/%name/%{name}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch: noarch
 BuildRequires:  glib2-devel >= 2.22
