@@ -1,7 +1,7 @@
 Summary:	.NET/C Sharp Bindings for GIO
 Name:		gio-sharp
 Version:	2.22.3
-Release:	3
+Release:	4
 License:	GPLv2 and MIT
 Group:		Development/Other
 Url:		https://github.com/mono/gio-sharp
