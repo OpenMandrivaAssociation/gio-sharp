@@ -1,11 +1,12 @@
 Summary:	.NET/C Sharp Bindings for GIO
 Name:		gio-sharp
-Version:	2.22.3
-Release:	10
+Version:	0.3
+Release:	1
 License:	GPLv2 and MIT
 Group:		Development/Other
 Url:		https://github.com/mono/gio-sharp
-Source0:	https://github.com/downloads/mono/%{name}/%{name}-%{version}.tar.bz2
+Source0:	https://github.com/mono/gio-sharp/archive/refs/tags/%{version}.tar.gz
+Patch0:		https://github.com/mono/gio-sharp/commit/a9468300a2b3de749d1e85746ccab65241be28c1.patch
 BuildArch:	noarch
 
 BuildRequires:  monodoc-core
@@ -29,10 +30,10 @@ Requires:	%{name} = %{version}-%{release}
 Files for developing programs that use gio-sharp
 
 %prep
-%setup -q
+%autosetup -p1
+%configure --libdir=%{_prefix}/lib
 
 %build
-%configure2_5x --libdir=%{_prefix}/lib
 make
 
 %install
@@ -48,4 +49,3 @@ make
 %{_datadir}/pkgconfig/gio-sharp-2.0.pc
 %dir %{_prefix}/share/gapi-2.0
 %{_prefix}/share/gapi-2.0/gio-api.xml
-
