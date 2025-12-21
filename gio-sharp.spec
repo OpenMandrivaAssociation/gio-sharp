@@ -9,6 +9,11 @@ Source0:	https://github.com/mono/gio-sharp/archive/refs/tags/%{version}.tar.gz
 Patch0:		https://github.com/mono/gio-sharp/commit/a9468300a2b3de749d1e85746ccab65241be28c1.patch
 BuildArch:	noarch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  monodoc-core
 BuildRequires:  pkgconfig(gapi-2.0)
 BuildRequires:  pkgconfig(glib-2.0)
